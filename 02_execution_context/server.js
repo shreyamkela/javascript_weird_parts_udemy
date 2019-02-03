@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public')); // Public folder call. This is e
 // Refer - https://stackoverflow.com/questions/29087318/how-do-i-include-an-external-javascript-file-when-serving-an-html-file-with-a-re#
 
 app.get('/', (req, res) => { 
-    res.sendFile(__dirname + '/index.html'); //sendFile sends a whole file to be rendered. __dirname is used when full path is required, instead of './' Here we are not using res.render as res.render can render a view and not a file. So to render an html file with a view we have to create views and view engine 
+    res.sendFile(__dirname + '/index.html'); //sendFile sends a whole file to be rendered. __dirname is used when full path is required, instead of './' Here we are not using res.render as res.render can render a view and not a file. So to render an html file with a view we have to create views and view engine. If we have to send a js file embedded into the html file, we have to include the js as static element in public, otherwise internet would not be able to find the js file as we are only sending the html file
 });
 
 app.listen(3000, () => { 
