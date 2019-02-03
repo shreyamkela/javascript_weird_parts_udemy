@@ -8,12 +8,13 @@ function b() {
 
 /*
  Generally, in programming languages, functions and variables are declared at the top as the excution is carried out line by line. 
- But in javascript execution context is generated in 2 phases. 
+ But in javascript execution context is generated (or simplythe execution takes place) in 2 phases. First is the creation phase and the second is the execution phase. 
  In the first phase, all the declared/defined variables and the functions have their memory space set up and get attached to the global object.
  In this phase, variables do not get the actual value, but just a declaration so they are still 'undefined'
  The next phase is the actual execution phase, in which actual line by line execution takes place. Thus, the above code behaves as such.
  So in the first phase the js engine goes through the code to assign memory spaces, and so nothing remains undeclared, and can be referenced in the execution phase (even though it is declared below the calling line in code).
  That is with the help of the first phase, in the second phase we have limited access to all the code even though it is physically present below the current line of execution
  This is 'Hoisting' in JavaScript. This should not be understood as the functions and the variable declarations being physically moved up in the code by the engine. 
+ Simply put, during 'Hoisting', functions and variables have their memory spaces set up, and variables are set equal to 'undefined'
  That is incorrect. Rather, code execution takes place in 2 phases.
 */ 
