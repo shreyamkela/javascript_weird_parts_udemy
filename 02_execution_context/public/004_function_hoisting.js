@@ -17,4 +17,5 @@ function b() {
  This is 'Hoisting' in JavaScript. This should not be understood as the functions and the variable declarations being physically moved up in the code by the engine. 
  Simply put, during 'Hoisting', functions and variables have their memory spaces set up, and variables are set equal to 'undefined'
  That is incorrect. Rather, code execution takes place in 2 phases.
+ As a good practice, we always declare variables and functions at the top, just like in other programming languages.
 */ 
