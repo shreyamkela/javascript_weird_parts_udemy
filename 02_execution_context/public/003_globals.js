@@ -1,5 +1,5 @@
 /* 
- Even with an empty .js file, when the file is run, an executon context (which is a wrapper code or javascript engine that runs and wraps around all of your code) is created and a global object which refers to that particular 'window' object. 
+ Even with an empty .js file, when the file is run, a global executon context (which is a wrapper code or javascript engine that runs and wraps around all of your code) is created and a global object which refers to that particular 'window' object. 
  At the global level, 'this' also referes to the global object. 'this' can change context and it depends on the scope.
  An outer environment referes to the global. For variables and functions, global object is the outer environment. 
  Note that the global object is the parent of all the functions and variables and everything in the code, and it has a large set of fundamental name-value pairs which forms the wrapper around our code. 
